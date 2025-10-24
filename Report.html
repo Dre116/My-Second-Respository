@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoply — Stock Dashboard</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="Stylesheet" href="Style.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <div class="logo-box">S</div>
+        <h2>Shoply</h2>
+      </div>
+      <nav class="nav">
+      <a href="index.html">Dashboard</a>
+<a href="Stock.html">Stock</a>
+<a href="Sales.html">Sales</a>
+<a href="Report.html">Reports</a>
+      </nav>
+    </div>
+
+    <main>
+      <header>
+        <h1>📦 Shoply Dashboard</h1>
+      </header>
+          <!-- Table -->
+      <table id="stockTable">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Price (₦)</th>
+            <th>Quantity</th>
+            <th>Sold</th>
+            <th>Remaining</th>
+            <th>Total Value (₦)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div>
+        <button class="reset-btn" onclick="resetData()">Reset Data</button>
+        <button id="exportBtn">Export CSV</button>
+      </div>
+    </main>
+    <script src="App.js"></script>
+  </body>
+</html>

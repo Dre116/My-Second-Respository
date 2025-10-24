@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoply — Stock Dashboard</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <link rel="Stylesheet" href="Style.css">
+ </head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <div class="logo-box">S</div>
+      <h2>Shoply</h2>
+    </div> 
+    <nav class="nav">
+<a href="index.html">Dashboard</a>
+<a href="Stock.html">Stock</a>
+<a href="Sales.html">Sales</a>
+<a href="Report.html">Reports</a>
+    </nav>
+  </div>
+
+  <main>
+    <header>
+      <h1>📦 Stocks</h1>
+    </header>
+
+    <!-- Stats Cards -->
+    <div class="stats">
+      <div class="card"><h3>Total Stock</h3><div class="number" id="totalStock">0</div></div>
+      <div class="card"><h3>Stock Sold</h3><div class="number" id="stockSold">0</div></div>
+      <div class="card"><h3>Stock Remaining</h3><div class="number" id="stockRemaining">0</div></div>
+      <div class="card"><h3>Total Value (₦)</h3><div class="number" id="totalValue">0</div></div>
+    </div>
+
+    <!-- Add Stock Form -->
+    <form id="addStockForm">
+      <input type="text" id="itemName" placeholder="Item Name" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="number" id="price" placeholder="Price (₦)" required />
+      <input type="number" id="quantity" placeholder="Quantity" required />
+      <button type="submit">Add Stock</button>
+    </form>
+         </main>
+ <script src="App.js"></script>
+     </body>
+  </html>
